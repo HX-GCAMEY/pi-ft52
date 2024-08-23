@@ -1,7 +1,7 @@
 import {ILogin, IRegisterUser} from "@/interfaces/Interfaces";
 
 export const postSignup = async (user: IRegisterUser) => {
-  const response = await fetch("http://localhost:5000/users/register", {
+  const response = await fetch("https://pi-ft52.onrender.com/users/register", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -13,7 +13,7 @@ export const postSignup = async (user: IRegisterUser) => {
 };
 
 export const postSignin = async (credentials: ILogin) => {
-  const response = await fetch("http://localhost:5000/users/login", {
+  const response = await fetch("https://pi-ft52.onrender.com/users/login", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

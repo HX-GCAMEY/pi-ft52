@@ -36,7 +36,7 @@ const checkout = async (cartItems: IProduct[]) => {
     const products = cartItems.map((item) => item.id); //products: [id's]
 
     const token = localStorage.getItem("token");
-    const response = await fetch("http://localhost:5000/orders", {
+    const response = await fetch("https://pi-ft52.onrender.com/orders", {
       method: "POST",
       headers: {
         Authorization: `${token}`,
